@@ -1,0 +1,31 @@
+h1. Grabcode's blog - authored by Alexandre Girard
+
+Eventually I blog. I feel it is time to do so - I've been using the web since my pentium 1, 166 MHz (1997), studying and working with and on it since 2003. I figure this is my turn to spoil it with some of my thought (oh they say "contribute" nowadays). After all, I have enough of this false modesty. Let's blog, mate.
+
+Note: it is automatically transformed by "Jekyll":http://github.com/mojombo/jekyll into a static site whenever I push this repository to GitHub.
+
+h2. You can do it too
+
+Assuming you have a github account:
+
+*Install jekyll // gem install jekyll
+*Create a jekyll project // jekyll new blog
+*Edit the file _config.yml with your details
+*Try it // jekyll serve --watch (open the brower http://0.0.0.0:4000/)
+*Host it on github. Create a repo named "{myGithubUser}.github.io"
+*git init
+*git add .
+*git commit -m 'blog'
+*git remote add origin git@github.com:{myGithubUser}/{myGithubUser}.github.io.git
+*git push
+
+Check out http://{myGithubUser}.github.io/ (might take 10 minutes)
+
+h1. License
+
+The following directories and their contents are Copyright Alexandre Girard. You may not reuse anything therein without my permission:
+
+* _posts/
+* images/
+
+All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to http://github.com/grabcode would be appreciated, but is not required.
