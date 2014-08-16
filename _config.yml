@@ -1,0 +1,12 @@
+# Site settings
+title: Grabcode
+email: alex@grabcode.fr
+description: "Grabcode is Alexandre Girard's website - a curious mind adding his wacky touch too the web, as if it was necessary to spoil it more."
+baseurl: ""
+url: "http://grabcode.fr"
+twitter_username: grabthecode
+github_username:  grabcode
+
+# Build settings
+markdown: kramdown
+permalink: pretty
