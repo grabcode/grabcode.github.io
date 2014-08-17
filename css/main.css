@@ -58,6 +58,8 @@ a:visited { color: #205caa; }
   line-height: 56px;
   position: relative;
   z-index: 1;
+  margin-left: 50%;
+  left: -155px;
 }
 
 .site-nav {
@@ -113,7 +115,21 @@ a:visited { color: #205caa; }
   width: calc(41.875%);
 }
 
+.site-header ul,
 .site-footer ul { list-style: none; }
+
+.site-header ul li{
+  float: left;
+  width: 33px;
+  height: 37px;
+}
+
+.site-header ul a{
+  text-align: center;
+  display: block;
+  margin: 6px 0;
+  width: 100%;
+}
 
 .site-footer li,
 .site-footer p {
@@ -123,7 +139,8 @@ a:visited { color: #205caa; }
 }
 
 .github-icon-svg,
-.twitter-icon-svg {
+.twitter-icon-svg,
+.linkedin-icon-svg {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -148,18 +165,20 @@ a:visited { color: #205caa; }
 
 .posts { list-style-type: none; }
 
-.posts li { margin-bottom: 30px; }
+.posts li { margin-bottom: 20px; }
 
 .posts .post-link {
-  font-size: 24px;
+  font-size: 1.2em;
   letter-spacing: -1px;
   line-height: 1;
 }
 
 .posts .post-date {
-  display: block;
   font-size: 15px;
   color: #818181;
+  width: 105px;
+  display: block;
+  float: left;
 }
 
 
@@ -391,6 +410,11 @@ a:visited { color: #205caa; }
     line-height: 1.25;
     padding: 5px 10px;
     margin: 0;
+  }
+
+  .site-title{
+    margin-left: 0;
+    left: 0;
   }
 
   .post-header h1 { font-size: 36px; }
