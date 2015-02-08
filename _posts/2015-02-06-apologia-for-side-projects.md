@@ -3,6 +3,7 @@ layout: post
 title:  "Apologia for side projects"
 date:   2015-02-06 21:35:00
 categories: misc
+comments: true
 ---
 
 An humble essay...
