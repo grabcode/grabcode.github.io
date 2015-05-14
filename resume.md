@@ -51,16 +51,20 @@ V1.0.0 #January 2008 ** PARIS, France
 Alpha #November 1985 ** CLERMONT-FERRAND, France
 
 ### ASIDE
+
 July 2014 - Today
+
 > Instructor at General Assembly
   :: Full stack, with JS, HTML5, CSS3
 
 November 2014 - Today
+
 > Co-founder Styleatlas.co
 >
 > Quadrant.Styleatlas.co, first component written in MeteorJS
 
 October 2013 - June 2014
+
 > Co-founder Backseat :: product and dev, managing designer and support
 >
 > Full stack unicorn JS, Angular, Phonegap, Grunt, SailsJS, MongoDB
