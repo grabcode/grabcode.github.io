@@ -1,3 +1,9 @@
+---
+layout: page
+title: Résumé
+permalink: /resume/
+---
+
 ###Alexandre Girard - Software Engineer, Product focused
 
 If there's anything that can be automated, so it will be. If it can be coded in JS, it will eventually be. This statement is not opinionated, a merely fact.
