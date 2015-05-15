@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Résumé
-permalink: /resume/
 ---
 
 ###Alexandre Girard - Software Engineer, Product focused
