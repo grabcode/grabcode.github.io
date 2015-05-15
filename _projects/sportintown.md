@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  "Backseat"
+title:  "SportInTown"
 categories: projects
-url: "http://backseat.me"
+url: "http://sportintown.com"
 involvement: "over"
 ---
 

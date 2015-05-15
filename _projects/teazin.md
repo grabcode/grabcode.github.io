@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  "Backseat"
+title:  "Teazin"
 categories: projects
-url: "http://backseat.me"
+url: "http://teaz.in"
 involvement: "over"
 ---
 
