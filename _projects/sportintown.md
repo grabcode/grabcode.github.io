@@ -2,8 +2,9 @@
 layout: project
 title:  "SportInTown"
 categories: projects
-url: "http://sportintown.com"
+externalurl: "http://sportintown.com"
 involvement: "over"
+bgimg: "sportintown.png"
 ---
 
 More to come soon.

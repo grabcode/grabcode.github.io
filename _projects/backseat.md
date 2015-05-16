@@ -2,8 +2,9 @@
 layout: project
 title:  "Backseat"
 categories: projects
-url: "http://backseat.me"
+externalurl: "http://backseat.me"
 involvement: "over"
+bgimg: "backseat.png"
 ---
 
 More to come soon.

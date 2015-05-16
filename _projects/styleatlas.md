@@ -2,8 +2,9 @@
 layout: project
 title:  "Style Atlas"
 categories: projects
-url: "http://styleatlas.co"
+externalurl: "http://styleatlas.co"
 involvement: "ongoing"
+bgimg: "styleatlas.png"
 ---
 
 More to come soon.

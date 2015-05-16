@@ -2,8 +2,9 @@
 layout: project
 title:  "Teazin"
 categories: projects
-url: "http://teaz.in"
+externalurl: "http://teaz.in"
 involvement: "over"
+bgimg: "teazin.png"
 ---
 
 More to come soon.

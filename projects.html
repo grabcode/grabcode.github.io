@@ -7,12 +7,10 @@ header: true
 
 <div class="home">
 
-  <h1>Projects</h1>
-
   <ul class="projects">
     {% for project in site.projects %}
-      <li>
-        <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+      <li style="background: url('/img/{{project.bgimg}}');">
+        <a target="_blank" href="{{project.externalurl}}"></a>
       </li>
     {% endfor %}
   </ul>
