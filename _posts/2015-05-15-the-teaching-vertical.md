@@ -22,6 +22,8 @@ Confident that teaching was a pillar within my future, I needed to start buildin
 
 #### Teaching at General Assembly
 
+<img alt="General Assembly" src="/img/ga.png" style="float:right;">
+
 As it happens, General Assembly was the perfect match for me on this journey. These guys have set up amazing course production teams that basically do all the heavy lifting, and guide and assist you as much as you ask them to. After a few successful interviews with the producer first and then an experienced instructor, I would be a TA for the 10 weeks Front-End Web Development course in Sydney. And, it was great. The teacher was amazing, knowledgeable and friendly. The content of the course is perfect to pick up quickly, and useful within industry standard materials. The students are super motivated and keep up despite the challenging learning curve (lots of students are real beginners).
 
 I was sold. I knew I’d pursue this newfound instructing direction. And I did. I’ve quickly started teaching one day classes. Then, I taught a full-stack class, spread across four evening classes. And, eventually I’ve started instructing as a main instructor for GA’s FEWD course. Plus, I am mentoring my TA for the course, who was actually a past student of mine. I couldn’t feel any prouder and satisfied. Instructing has become a complementary, part-time gig for me. I’m not done with programming, and I don’t think I’ll be done for the next five years, but instructing has renewed my love for all things programming.
