@@ -4,7 +4,7 @@
   text-transform: uppercase;
 }
 
-.page-content p:first-child:first-letter {
+.post-content > p:first-child:first-letter {
   float: left;
   font-size: 76px;
   line-height: 72px;
