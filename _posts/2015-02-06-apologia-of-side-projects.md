@@ -1,18 +1,20 @@
 ---
 layout: post
-title:  "Apologia for side projects"
+title:  "Apologia of side projects"
 date:   2015-02-06 21:35:00
 categories: misc
 comments: true
 ---
 
-An humble essay...
+An humble essay, demonstrating how side projects might get you out of the well... A long time ago, in a city far from here, I was preparing myself for my first set of job interviews. I knew that the HR would likely ask me to pick up three attributes that would match me the best, a pretty formal request.
 
-I remember preparing myself for my first serie of job interviews. I knew back then that the HR would likely ask me to pick up 3 attributes that would match me the best.
+#### Market yourself
 
-My first reaction was "what a f*^6 joke". While trying to answer, I started to regret my aversion, back then, for marketing. I had indeed to sell myself. Pardon my french, but I was far away from my comfort zone. I was yet another blunt young guy, very proud of following few principles, and one of them was to be transparent, almost Candide.
+My first reaction was "what a f*^6 joke". While trying to answer, I've started to regret my aversion, back then, for marketing. I had indeed to sell myself. Pardon my french, but I was far away from my comfort zone. I was yet another blunt young guy, very proud of following few principles, and one of them was to be transparent, almost Candide.
 
 I've learned the hard way that the truth is unique but the number of ways to perceive it is equal to the number of people on earth. We can do the analogy with a glass containing 50% of water, and 50% of air (not doing a cocktail). Well, ask yourself what would you see ? Is the glass half empty or half full ? My point is made, isn't it ?
+
+#### Perfect is the ennemy of good
 
 Moving on. I figure that the obvious quality to pull out of the magic hat was "perfection". Or at least the quest for perfection. Boring, right ? Actually, things can get twisted - always. Whatever quality you come up with, apply it to the extreme, and you'll end up with a flaw, a vice, a stain. Consequently:
 
@@ -20,11 +22,15 @@ Moving on. I figure that the obvious quality to pull out of the magic hat was "p
 alias Perfection='Procrastination'
 {% endhighlight %}
 
-It became clear to me that I was indeed perfectionist enough just so I could avoid to get involved deeply in any projects or simply share some works that wouldn't be 100% bullet proof. I guess it is a natural protection to criticism and a way to justify laziness.
+It became clear to me that I was indeed perfectionist enough just so I could avoid to get involved deeply in many projects or simply share some works that wouldn't be 100% bullet proof. I guess it is a natural protection to criticism and a way to justify laziness.
+
+#### Stepping out of the comfort zone
 
 I've been fixing myself since then, and throughout the years I've managed to find my own cure. The first pillar of this re-education has consisted in constantly learning and experimenting technologies. The second pillar consisted in working with small team of ultra passionate people. The third pillar was to work on real project that make you thrill: becoming rich, getting control of your career, getting acknowledged by your peer...
 
 Among those projects, I can mention <a href="https://sportintown.com/" target="_blank">SportInTown</a>, <a href="http://teaz.in/" target="_blank">Teazin</a>, and my biggest success so far, <a href="http://backseat.me/" target="_blank">Backseat.me</a>.
+
+#### Failing is better than not trying
 
 All of that eventually failed (although the backseat tech almost got acquired). Remember the glass of water ? Well the only truth that matters is that in exchange for some of my time (sometimes a bit of money too), I got out of this projects with a huge experience, and people I can surely say I know. And get that right: the time/outcome ratio is unbeatable.
 
