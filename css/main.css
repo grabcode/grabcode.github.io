@@ -1,3 +1,15 @@
+.home{
+  float: left;
+}
+
+.two-third{
+  width: 65%;
+}
+
+.one-third{
+  width: 35%;
+}
+
 .page-content h4{
   color: rgba(0,0,0,0.44);
   letter-spacing: -0.02em;
