@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: cheatsheet
 title: "Responsive Web Design"
+comments: true
 ---
 
 ### Goal
@@ -11,7 +12,9 @@ Concretely, we have the same HTML(s) sent over every devices, regardless of thei
 
 ### Responsive layout
 
-Responsive web design is design first. We need to define the targets, and come up with a layout for each.
+Responsive web design is design first. We need to come up with a layout for each device screen's size ranges.
+
+Designing for touch screens involves a lot of new consideration, such the sizes of the button. It is indeed recommended to have a minimum of 40px width and height (finger tip approx. sizes).
 
 #### Fluid layout
 
