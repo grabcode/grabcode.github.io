@@ -10,8 +10,10 @@ github_username:  grabcode
 # Build settings
 markdown: kramdown
 permalink: pretty
-#sass:
-  #style: :compressed
+
+sass:
+  sass_dir: _sass
+  style: :compressed
 
 collections:
   projects:
