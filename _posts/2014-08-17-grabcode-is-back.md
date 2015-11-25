@@ -38,7 +38,7 @@ var alex = (function(){
     from: "france",
     family: {
       status: "maried",
-      children: 1
+      children: 2
     }
   };
 
@@ -64,7 +64,7 @@ var alex = (function(){
 
     var age    = new DateInterval(new Date('1985-11-18'), new Date());
     var ageDOM = document.querySelector('.mi');
-    ageDOM.innerHTML = age.toYear().toFixed();
+    ageDOM.innerHTML = age.toYear().toFixed(2);
 
   })();
 </script>
