@@ -6,6 +6,12 @@ categories: dev
 comments: true
 ---
 
+Each episode tales a story
+
+End of season 2: twitter drama
+
+
+
 They are amazingly scared about small businesses. I'd call that the Goliath and David syndrom.
 
 They have a monopole, and they did came out
@@ -17,7 +23,7 @@ How ? For me, the key is a better richness repartition. A logarithmic approach i
 Treshold? Hard to define.
 Another issue to address: patrimoine (legacy).
 
-Indeed we must admit that we never left the lords and kings kind of wealth repartition. .3% dominates, hence control, 99.7%. 
+Indeed we must admit that we never left the lords and kings kind of wealth repartition. .3% dominates, hence control, 99.7%.
 
 Uber banned us.
 

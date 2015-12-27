@@ -1,0 +1,74 @@
+#disqus_thread{
+  margin-top: 20px;
+}
+
+.home{
+  float: left;
+}
+
+.two-third{
+  width: 65%;
+}
+
+.one-third{
+  width: 35%;
+}
+
+.page-content h4{
+  color: rgba(0,0,0,0.44);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.post-content > p:first-child:first-letter {
+  float: left;
+  font-size: 76px;
+  line-height: 72px;
+  margin: 0 6px 0 0;
+}
+
+.hexagon {
+  position: relative;
+  width: 300px;
+  height: 173.21px;
+  background-color: #64C7CC;
+  margin: 86.60px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #64C7CC;
+}
+
+.projects{
+  list-style:none;
+}
+
+.projects li{
+  float: left;
+  width: 240px;
+  min-height:200px;
+  border: 1px solid #DDD;
+  margin: 1px;
+}
+
+.projects a{
+  display: inline-block;
+  width: 100%;
+  min-height: inherit;
+}

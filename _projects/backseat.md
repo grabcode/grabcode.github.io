@@ -3,7 +3,8 @@ layout: project
 title:  "Backseat"
 categories: projects
 externalurl: "http://backseat.me"
-involvement: "over"
+state: "finished"
+category: "entrepreneurship"
 bgimg: "backseat.png"
 ---
 

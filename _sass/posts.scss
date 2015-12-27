@@ -1,0 +1,16 @@
+.page-content {
+
+  h4{
+    color: rgba(0,0,0,0.44);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  &>p:first-child:first-letter {
+    float: left;
+    font-size: 76px;
+    line-height: 72px;
+    margin: 0 6px 0 0;
+  }
+
+}

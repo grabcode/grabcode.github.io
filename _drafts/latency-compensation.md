@@ -14,3 +14,6 @@ Mention meteor
 
 
 http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/ ??
+
+
+http://info.meteor.com/blog/optimistic-ui-with-meteor-latency-compensation

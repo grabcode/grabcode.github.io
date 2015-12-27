@@ -3,5 +3,8 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@import "mixins";
+@import "_mixins";
+
 @import "misc";
+@import "posts";
+@import "projects";

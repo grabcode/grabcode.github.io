@@ -6,6 +6,8 @@ categories: dev
 comments: true
 ---
 
+Business wise: talk about pivots
+
 Backseat post part 2
 
 backseat, bapteme du feu pour mon dev.
