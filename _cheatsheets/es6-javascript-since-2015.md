@@ -15,18 +15,18 @@ We are going to concentrate onto ES6 features, and eventually bring the most wid
 
 ### Plan
 
-[ ] Destructuring assignment
-[ ] Template string
-[ ] var, let, const
-[ ] rest operator, argument spreading, (Diarhea annotation)
-[ ] import/export
-[ ] class
-[ ] arrow function `=>`
-[ ] Generators
-[ ] Promises,
-[ ] Maps, Sets
-[ ] Symbols
-[ ] Misc: `Object.assign`, `fetch`
+- [ ] Destructuring assignment
+- [ ] Template string
+- [ ] var, let, const
+- [ ] rest operator, argument spreading, (Diarhea annotation)
+- [ ] Module system `import` and `export`
+- [ ] `class`
+- [ ] arrow function `=>`
+- [ ] Generators
+- [ ] Promises,
+- [ ] Maps, Sets
+- [ ] Symbols
+- [ ] Misc: `Object.assign`, `fetch`
 
 
 ### Destructuring assignment
