@@ -6,9 +6,7 @@ categories: life
 comments: true
 ---
 
-Bonjour,
-
-Vous avez certainement attéri sur cette article soit car je l'ai promu sur les réseau sociaux, soit car vous êtes intéressé de lire à propos l'immigration en l'Australie.
+Bienvenu, vous avez certainement attéri sur cette article soit car je l'ai promu sur les réseau sociaux, soit car vous êtes intéressé de lire à propos l'immigration en l'Australie.
 
 At this point, you would have dropped out or guessed that this article will continue in French since it is targetting the French speaking people (~220 millions people according [wikipedia](https://en.wikipedia.org/wiki/French_language), roughtly 3% of earth population). You should start learning it [here, oui monsieur](http://duolingo.com).
 
