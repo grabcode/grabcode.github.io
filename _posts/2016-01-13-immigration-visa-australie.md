@@ -86,6 +86,8 @@ Le "PR" (permanent residency) est votre objectif ultime. Il va vous octroyer les
 
 ### Skilled VISA, code 189 {#skilled-visa-189}
 
+<img style="height:120px;width:auto;" alt="Skilled Visa 189 granted" src="/img/skilled-visa-189.jpg">
+
 L'accès à la résidence permanente se fait par différent moyen. Je connais très bien le Skilled VISA, code 189, car c'est le mien, et je l'ai fait moi-même (par d'agent d'immigration)! Le 189 est fait à l'initiative du particulier souhaitant la résidence permanente. Ou alors vous pouvez également soliciter un agent d'immigration qui enchange de frais vous épargnera énormément de travails.
 
 Les étapes du Skilled VISA sont nombreuses, et nécessite beaucoup de temps et patience pour les réussir. La 1ère étape avant de pouvoir appliquer est l'Expression Of Interest, EOI. Ahah, j'imagine votre tête. What the f***, n'est ce pas?
