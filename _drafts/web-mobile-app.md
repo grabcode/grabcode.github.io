@@ -6,6 +6,16 @@ categories: dev, architecture
 comments: true
 ---
 
+Spectrum
+< Vanilla JS -------- Opinionated JS ---->
+
+
+
+
+Native App?
+Nativescript vs
+
+
 Web app ? Hybrid ?
 
 Sencha, Jquery Mobile ? They are framework, and don't propose wrapper.
