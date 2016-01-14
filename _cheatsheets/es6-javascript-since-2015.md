@@ -71,7 +71,9 @@ chapter == "Destructuring Assignment"; //true
 ```
 
 Very often I ask an object containing a list of run my function.
+
 ```javascript
+
 function buildStateLabel(state) {
   var {document, chapter} = state; // 'document' refers directly to the key I'm interested into
   return "Currently reading '"+ document + "', chapter '" + chapter + "'";
@@ -82,22 +84,29 @@ var readingState = buildStateLabel(currentState);
 
 // readingState == "Currently reading 'Leaning ES6', chapter 'Destructuring Assignment'";
 console.log(readingState);
+
 ```
 
 In case the key "document" wouldn't fit, you can change it. After all it could be too long or the name irrelevant for the function.
 
 ```javascript
+
 var {document: book} = {document: "Learning ES6", chapter: "Destructuring Assignment"};
 book == "Learning ES6"
 document == undefined
+
 ```
 
 I could rewrite my function above to actually define my variables directly:
+
 ```javascript
+
 function buildStateLabel({document, chapter}) {
   return "Currently reading '"+ document + "', chapter '" + chapter + "'";
 }
+
 ```
+
 The benefits are multiple. Besides writing less code, it makes clearer what is "necessary" for my function.
 
 You can the code executing `babel-node desctructuring/objects.js`.
