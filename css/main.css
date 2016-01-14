@@ -27,6 +27,10 @@
   margin: 0 6px 0 0;
 }
 
+.post-content {
+  text-align: justify;
+}
+
 .hexagon {
   position: relative;
   width: 300px;

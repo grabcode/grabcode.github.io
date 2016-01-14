@@ -61,11 +61,10 @@ Aussi malgré mon message plus haut, je pense tout de même que le VISA 457 est 
 
 Voici une note importante. Tout les employeurs ne peuvent pas sponsoriser. Un employeur doit obtenir et payer un droit de sponsoriser. Pour cela, outre l'addition, il devra prouver qu'il a tenté sans succès de recruter des personnes sur le territoire. Evidemment, le marché de l'emploi fluctu, et certains domaines ont de grosse pénuerie, comme par exemple l'ingénieurie logiciel. Il existe une liste, nommé la ["Skilled occupation list" (SOL)](https://www.border.gov.au/Trav/Work/Work/Skills-assessment-and-assessing-authorities/skilled-occupations-lists/SOL) qui contient tout les corps de métier dont l'Australie manque.
 
-Voici une note importante. Tout les employeurs ne peuvent pas sponsoriser. Un employeur doit obtenir et payer un droit de sponsoriser. Pour cela, outre payer l'addition, il devra prouver qu'il a tenté sans succès de recruter des personnes sur le territoire. Evidemment, le marché de l'emploi fluctu, et certains domaines ont une grosse pénuerie, comme par exemple l'ingénieurie logiciel. Il existe une liste, nommée la ["Skilled occupation list" (SOL)](https://www.border.gov.au/Trav/Work/Work/Skills-assessment-and-assessing-authorities/skilled-occupations-lists/SOL) qui contient tout les corps de métier dont l'Australie manque.
-
 ### Alternative {#alternative}
 
-Admettons que vous ayez un employeur fortement intéressé mais ne pouvant pas sponsoriser. Et bien il existe une société nommée [Lester Associate](http://lester.com.au) qui travaille en collaboration avec le ministère du travail ["Fairwork"](http://www.fairwork.gov.au) afin de proposer des Visas Sponsorisés "proxy". J'utilise ce terme (mon invention) afin d'expliquer que Lester Associate va en fait être votre recruteur (celui qui vous paie et envoie les bulletins de salaire). Evidemment, cette société est un intermediaire pour couvrir le VISA.                                                                                     
+Admettons que vous ayez un employeur fortement intéressé mais ne pouvant pas sponsoriser. Et bien il existe une société nommée [Lester Associate](http://lester.com.au) qui travaille en collaboration avec le ministère du travail ["Fairwork"](http://www.fairwork.gov.au) afin de proposer des Visas Sponsorisés "proxy". J'utilise ce terme (mon invention) afin d'expliquer que Lester Associate va en fait être votre recruteur (celui qui vous paie et envoie les bulletins de salaire). Evidemment, cette société est un intermediaire pour couvrir le VISA.
+
 Par exemple, j'ai un ami qui est passé d'un VISA étudiant à un VISA sponsorisé car la société voulant le recruter, Bauer Media, ne voulait pas (ou ne pouvait pas?) prendre en charge de sponsorship au début. Aussi, mon ami a contacté Lester Associate afin d'acter en tant que "proxy".
 
 Attention! Warning! Achtung! Lester ne travaille pas pour l'unique satisfaction de vous aider. C'est une société privée qui probablement paie une commission importante au gouvernement. Elle se rémunère en prélevant de 8 à 11% à ma connaissance. Ouch. Oui, la douloureuse est importante. Je trouve que Lester propose une alternative excellente, mais il faut faire de votre mieux pour transférer au plus tôt le VISA 457 dans la société elle-même.
@@ -88,7 +87,7 @@ Le "PR" (permanent residency) est votre objectif ultime. Il va vous octroyer les
 
 ### Skilled VISA, code 189 {#skilled-visa-189}
 
-Extrait de mon PR<br>
+Extrait de mon PR:<br>
 <img style="height:120px;width:auto;" alt="Skilled Visa 189 granted" src="/img/skilled-visa-189.jpg">
 
 L'accès à la résidence permanente se fait par différents moyens. Je connais très bien le Skilled VISA, code 189, car c'est le mien, et je l'ai fait moi-même ! Le 189 est fait à l'initiative du particulier souhaitant la résidence permanente. Ou alors vous pouvez également soliciter un agent d'immigration qui en echange de frais vous épargnera énormément de travail.
