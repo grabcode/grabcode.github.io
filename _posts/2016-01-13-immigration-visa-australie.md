@@ -31,8 +31,8 @@ Attention mesdames et messieurs, maintenant je vais commencer.
   * [x] [Démarche](#demarche)
   * [x] [Coûts du Skilled VISA](#cout-du-visa)
   * [x] [Depuis la France](#depuis-la-france)
-* [ ] [Prochaine étape: Citoyenneté](#prochaine-etape-citoyennete)
-
+* [x] [Prochaine étape: Citoyenneté](#prochaine-etape-citoyennete)
+# [x] [Conclusion](#conclusion)
 
 ## Introduction {#intro}
 
@@ -77,9 +77,7 @@ Vous avez différentes options. Ma femme et moi étions chez [IMAN](http://www.a
 
 ### Travailler en parallèle du 457 {#travailler-en-parallele}
 
-Une autre note importante, qui demanderait validation par un avocat. Il est légal de travailler en plus  de votre VISA sponsorisé. J'ai enseigné à General Assembly ponctuellement de Juillet 2014 à l'obtention de ma résidence permanente, en Novembre de la même année et l ai declare. Pourquoi l'ai-je fait? Je ne voulais absolument pas travailler au noir.  De plus je trouve légitime de payer ses taxes.
-
-Au cas où vous souhaitez travailler à côté, vous aurez besoin de créer une société et obtenir un ABN. Ceci est une autre histoire… Sachez tout de meme qu' il existe l'equivalent du status d'auto-entrepreneur.
+A ce jour, il est illégal de travailler pour un autre employeur que selon vous ayant sponsorisé. Sachez tout de même qu' il existe l'equivalent du status d'auto-entrepreneur. Vous aurez simplement à vous procurer un ABN en ligne.
 
 ## Obtention du sésame: la Résidence Permanente {#residence-permanente}
 
@@ -149,13 +147,21 @@ Notez que certaines nationalités ne permettent pas d'en avoir plusieurs. Les al
 
 Attention! Warning! Achtung! Les citoyens Australiens ont le devoir de voter. Contrairement à la France, c'est une obligation. Si vous manquez une élection et ne produisez pas un document prouvant une raison valable (maladie grave, à l'étranger, ou sommeil profond, ah non pas celui là), et bien vous vous verrez recevoir une belle amende. Nice! Est-ce une bonne chose? Chacun son point de vue.
 
+## Conclusion {#conclusion}
+
+Pour conclure, il est important de mentionner que la législation change régulièrement. L'immigration est en effet impactée par les contextes sociaux-économiques du pays. Il faut vous méfier des forums, qui outre n'avoir aucune autorité, peuvent être simplement dépassé. Et méfiez-vous donc de cet article, car il est possible que le contenu ne soit plus correct dans les mois à venir.
+
+Voilà pourquoi il vous est conseillé de solliciter un agent d'immigration accrédité. Vous pouvez en trouver sur le site de [MARA](https://www.mara.gov.au/search-the-register-of-migration-agents/) ou [MIA](https://www.mia.org.au/find-an-agent). Vous pouvez y trouver des agents francophones. A ce propos, je peux vous conseiller de contacter [Julie Tariel](http://www.julietariel.com/), présente sur Sydney.
+
+Je tiens à préciser que l'Australie est un pays prospère qui manque de personnes qualifiées dans certains domaines, comme l'informatique et la médecine.
+
 #### The end, or the start, not sure
 
 Voilà, c'est mon expérience de l'immigration depuis la France vers l'Australie. Je l'ai agrémentée de connaissances générales acquises ses 4 dernières années.
 
 Sentez-vous libre de corriger mes propos dans les commentaires.
 
-Vous pouvez me suivre sur [Twitter](https://twitter.com/grabthecode) ou me contacter par email.
+Vous pouvez me suivre sur [Twitter](https://twitter.com/grabthecode) ou me contacter par <a href="mailto:alex@grabcode.fr?subject=Merci pour le blog post">email</a>.
 
 Cheers,
 Alex
