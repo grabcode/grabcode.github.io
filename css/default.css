@@ -1074,17 +1074,64 @@ a:hover {
   .value-section, .featured-section, .track-section, .content-grid { padding-left: 20px; padding-right: 20px; }
   .stat-number { font-size: 2.2rem; }
 }
-@media screen and (max-width: 480px) {
-  .site-nav .trigger { display: none; }
-  .menu-icon { display: block; }
+@media screen and (max-width: 680px) {
+  .site-nav {
+    position: static;
+  }
+  .site-nav .trigger {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    left: auto;
+    min-width: 200px;
+    background: #161b22;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+    padding: .5rem 0;
+    z-index: 999;
+    flex-direction: column;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    animation: menuSlideDown 0.2s ease-out;
+  }
+  @keyframes menuSlideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
   .site-header .wrap.nav-open .trigger {
     display: flex;
-    flex-direction: column;
+  }
+  .site-nav .trigger .page-link {
+    padding: .75rem 24px;
+    display: block;
     width: 100%;
-    gap: .75rem;
-    padding: .5rem 0;
+    transition: background 0.2s;
+  }
+  .site-nav .trigger .page-link:hover {
+    background: rgba(88, 166, 255, 0.08);
+  }
+  .menu-icon {
+    display: block;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 8px;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+  }
+  .menu-icon:hover { border-color: var(--accent); }
+  .menu-icon svg { width: 20px; height: 16px; display: block; }
+  .social-links { display: none; }
+  .site-header {
+    position: relative;
   }
   .hero-cta { flex-direction: column; align-items: center; }
+  .hero-cta .btn { width: 100%; justify-content: center; }
+}
+@media screen and (max-width: 480px) {
   .hero-cta .btn { width: 100%; justify-content: center; }
 }
 
@@ -1636,6 +1683,72 @@ img {
   .mosaic-tile-4, .mosaic-tile-5, .mosaic-tile-6 {
     grid-column: span 1;
     grid-row: span 1;
+  }
+}
+
+/* Mobile: subtle blur, title always visible, no fog layer */
+@media (hover: none) {
+  .mosaic-fog {
+    display: none !important;
+  }
+  .mosaic-tile .mosaic-media img {
+    filter: blur(3px) saturate(0.7) brightness(0.6) !important;
+    opacity: 1 !important;
+    transform: scale(1.05) !important;
+  }
+  .mosaic-tile::after {
+    opacity: 1 !important;
+    background: linear-gradient(0deg,
+      rgba(10, 14, 23, 0.7) 0%,
+      rgba(10, 14, 23, 0.3) 50%,
+      rgba(10, 14, 23, 0.15) 100%) !important;
+  }
+  .mosaic-content {
+    justify-content: center !important;
+    opacity: 1 !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .mosaic-title {
+    transform: none !important;
+    opacity: 1 !important;
+    font-size: 1.2rem !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5) !important;
+    color: #fff !important;
+  }
+  .mosaic-tagline {
+    opacity: 0.85 !important;
+    transform: none !important;
+    color: rgba(255,255,255,0.85) !important;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4) !important;
+  }
+  .mosaic-role {
+    opacity: 0.7 !important;
+    transform: none !important;
+    color: rgba(255,255,255,0.7) !important;
+  }
+  .mosaic-tech,
+  .mosaic-cta {
+    display: none !important;
+  }
+}
+/* Light theme mobile mosaic */
+@media (hover: none) {
+  [data-theme="light"] .mosaic-tile .mosaic-media img {
+    filter: blur(3px) saturate(0.7) brightness(0.85) !important;
+  }
+  [data-theme="light"] .mosaic-tile::after {
+    background: linear-gradient(0deg,
+      rgba(255, 255, 255, 0.75) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0.1) 100%) !important;
+  }
+  [data-theme="light"] .mosaic-title {
+    color: #1e293b !important;
+    text-shadow: 0 1px 6px rgba(255,255,255,0.6) !important;
+  }
+  [data-theme="light"] .mosaic-tagline {
+    color: #334155 !important;
   }
 }
 
@@ -3053,4 +3166,10 @@ html .mosaic-media img {
 @keyframes svgDotPulse {
   0%, 100% { r: 7; opacity: 0.8; }
   50% { r: 12; opacity: 0; }
+}
+
+/* Light theme mobile menu */
+[data-theme="light"] .site-nav .trigger {
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
 }

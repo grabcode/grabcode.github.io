@@ -338,6 +338,30 @@
     window._gitResize = setTimeout(drawGitBranches, 200);
   });
 
+  /* ── Mobile hamburger menu ──────────────────────────── */
+  var menuIcon = document.querySelector('.menu-icon');
+  if (menuIcon) {
+    menuIcon.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var wrap = this.closest('.wrap');
+      wrap.classList.toggle('nav-open');
+    });
+    // Close menu when clicking a link
+    document.querySelectorAll('.site-nav .trigger .page-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        var wrap = document.querySelector('.site-header .wrap');
+        if (wrap) wrap.classList.remove('nav-open');
+      });
+    });
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      var wrap = document.querySelector('.site-header .wrap');
+      if (wrap && wrap.classList.contains('nav-open') && !e.target.closest('.site-nav')) {
+        wrap.classList.remove('nav-open');
+      }
+    });
+  }
+
   /* ── Navbar shadow on scroll ─────────────────────────── */
   var header = document.querySelector('.site-header');
   if (header) {
