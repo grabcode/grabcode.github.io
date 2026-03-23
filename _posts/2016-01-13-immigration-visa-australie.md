@@ -163,7 +163,7 @@ Voilà, c'est mon expérience de l'immigration depuis la France vers l'Australie
 
 Sentez-vous libre de corriger mes propos dans les commentaires.
 
-Vous pouvez me suivre sur [Twitter](https://twitter.com/grabthecode) ou me contacter par <a href="mailto:alex@grabcode.fr?subject=Merci pour le blog post">email</a>.
+Vous pouvez me suivre sur [Twitter](https://twitter.com/alxgirard) ou me contacter par <a href="mailto:alex@grabcode.fr?subject=Merci pour le blog post">email</a>.
 
 Cheers,
 Alex

@@ -4,40 +4,42 @@
     <meta name="robots" content="index,follow,archive">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="p:domain_verify" content="b9527a2dfd46398b2b9ec5e25083d338"/>
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="theme-color" content="#0d1117">
+    <meta name="color-scheme" content="dark light">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta name="keywords" content="Grabcode, Software development, Full stack dev, Architect, Solution design, Javascript, Angular JS, Node JS, Sails JS, Meteor JS, Cordova, Phonegap, Famous, Famo.us, Jquery">
-
-    <!-- Google Authorship and Publisher Markup -->
-    <link rel="author" href="https://plus.google.com/+AlexandreGirardGrabcode/posts">
-    <link rel="publisher" href="https://plus.google.com/+AlexandreGirardGrabcode">
-
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Grabcode website">
-    <meta itemprop="description" content="Grabcode - I design solutions, and implement them. I'm always looking for new need to fulfil (please don't be mistaken). Check out my projects.">
-    <meta itemprop="image" content="{{site.url}}/img/grabcode.png">
-
+    <meta name="keywords" content="Full-stack developer, JavaScript, TypeScript, React, Node.js, Web development, Product engineering, Software architecture">
+    
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@grabthecode">
-    <meta name="twitter:title" content="Grabcode website">
-    <meta name="twitter:description" content="Grabcode - I design solutions, and implement them. I'm always looking for new need to fulfil (please don't be mistaken). Check out my projects.">
-    <meta name="twitter:creator" content="@grabthecode">
+    <meta name="twitter:site" content="@alxgirard">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:creator" content="@alxgirard">
     <meta name="twitter:image:src" content="{{site.url}}/img/grabcode.png">
-
+    
     <!-- Open Graph data -->
-    <meta property="og:title" content="Grabcode website">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http://grabcode.fr/">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:image" content="{{site.url}}/img/grabcode.png">
-    <meta property="og:description" content="Grabcode - I design solutions, and implement them. I'm always looking for new need to fulfil (please don't be mistaken). Check out my projects.">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:site_name" content="Grabcode">
-    <meta property="article:published_time" content="2014-08-17">
-
-    <!-- <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"> -->
-
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/default.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+    <!-- Theme: detect preference early to prevent FOUC -->
+    <script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        // Update theme-color meta
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.content = theme === 'dark' ? '#0a0e17' : '#f8fafc';
+      })();
+    </script>
 </head>

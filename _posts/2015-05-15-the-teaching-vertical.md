@@ -28,7 +28,7 @@ As it happens, General Assembly was the perfect match for me on this journey. Th
 
 I was sold. I knew I’d pursue this newfound instructing direction. And I did. I’ve quickly started teaching one day classes. Then, I taught a full-stack class, spread across four evening classes. And, eventually I’ve started instructing as a main instructor for GA’s FEWD course. Plus, I am mentoring my TA for the course, who was actually a past student of mine. I couldn’t feel any prouder and satisfied. Instructing has become a complementary, part-time gig for me. I’m not done with programming, and I don’t think I’ll be done for the next five years, but instructing has renewed my love for all things programming.
 
-Thanks for reading. I’ve really enjoyed sharing with you how I came to teach at General Assembly. Other stories about this journey are coming up, stay tuned <a href="https://twitter.com/grabthecode" target="_blank">@grabthecode</a>.
+Thanks for reading. I’ve really enjoyed sharing with you how I came to teach at General Assembly. Other stories about this journey are coming up, stay tuned <a href="https://twitter.com/alxgirard" target="_blank">@alxgirard</a>.
 
 I’d love to mention few people involved in this journey so far: Nikki Fiedler, Brice Lechatellier (<a href="https://twitter.com/pastawoua" target="_blank">@pastawoua</a>), Eduardo Kranz (<a href="https://twitter.com/eduardokranz" target="_blank">@eduardokranz</a>), and John Pethers (<a href="https://twitter.com/johnpethers" target="_blank">@johnpethers</a>).
 

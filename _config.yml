@@ -1,11 +1,12 @@
 # Site settings
 title: Grabcode
 email: alex@grabcode.fr
-description: "© 2015 Alexandre Girard"
+description: "Alexandre Girard — Senior Engineering Manager, Co-founder, Full-stack Engineer"
 baseurl: ""
 url: "http://grabcode.fr"
-twitter_username: grabthecode
+twitter_username: alxgirard
 github_username:  grabcode
+author: Alexandre Girard
 
 # Build settings
 markdown: kramdown

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   {% include head.html %}
-
-    <body>
-
+  <body class="page-{{ page.title | slugify }}">
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
-      </div>
-    </div>
+    <main class="page-content">
+      {% if page.full_width %}
+        {{ content }}
+      {% else %}
+        <div class="wrap">
+          {{ content }}
+        </div>
+      {% endif %}
+    </main>
 
     {% include footer.html %}
     {% include analytics.html %}
-    </body>
+    <script src="{{ "/js/effects.js" | prepend: site.baseurl }}"></script>
+  </body>
 </html>

@@ -1,42 +1,185 @@
 ---
 layout: default
+full_width: true
 ---
 
-<div class="home two-third">
+<div class="homepage">
 
-  <h1>Blog posts</h1>
+  <!-- Hero Section -->
+  <section class="hero-section" data-mouse-glow>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Alexandre <span class="text-gradient">Girard</span></h1>
+      <p class="hero-role">Senior Engineering Manager at <strong>Atlassian</strong></p>
+      <p class="hero-description">I build high-performing teams and ship products that scale. 17+ years turning ideas into reality — from co-founding startups to leading core experiences at Jira.</p>
+      <div class="hero-cta">
+        <a href="{{ site.baseurl }}/projects/" class="btn btn-primary">View My Work</a>
+        <a href="{{ site.baseurl }}/resume/" class="btn btn-outline">The Journey</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3v14m0 0l5-5m-5 5l-5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </section>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date_to_string }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- Value Proposition Section -->
+  <section class="value-section">
+    <h2 class="section-heading">What I Bring to the Table</h2>
+    <p class="section-subheading">From zero-to-one product builds to scaling teams at enterprise level</p>
 
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+    <div class="value-grid">
+      <div class="value-card" data-tilt>
+        <div class="value-card-glow"></div>
+        <div class="value-icon">🌱</div>
+        <h3>Growing Teams &amp; Leadership</h3>
+        <p>I build, scale, and coach high-performing engineering teams. From growing a startup team of 3 to 25 to leading Jira's core experiences at Atlassian — I invest in the humans behind the code.</p>
+        <ul class="value-proof">
+          <li>Scaled organizations to 50+ engineers</li>
+          <li>Leading some of Jira's core experiences at Atlassian</li>
+          <li>600+ hours instructing, 250+ students mentored</li>
+          <li>Growing ICs into tech leads &amp; managers</li>
+        </ul>
+      </div>
 
-</div>
+      <div class="value-card" data-tilt>
+        <div class="value-card-glow"></div>
+        <div class="value-icon">🏗️</div>
+        <h3>Product Engineering</h3>
+        <p>Full-stack builder who ships. I've taken 4 products from concept to market — architecting systems that serve hundreds of thousands of users.</p>
+        <ul class="value-proof">
+          <li>Co-founded 4 startups (Liftango, Upflowy, Style Atlas, Backseat)</li>
+          <li>Award-winning cloud &amp; mobile solutions</li>
+          <li>Real-time systems at scale</li>
+          <li>Instrumentalising Engineering operations tools and Product analytics</li>
+        </ul>
+      </div>
 
-<div class="home one-third">
+      <div class="value-card" data-tilt>
+        <div class="value-card-glow"></div>
+        <div class="value-icon">🎯</div>
+        <h3>Strategy &amp; Execution</h3>
+        <p>Bridging the gap between product vision and technical execution. I turn ambiguous problems into shipped solutions with velocity.</p>
+        <ul class="value-proof">
+          <li>CPO + CTO dual role at Liftango</li>
+          <li>Enterprise integration architect (NewsCorp)</li>
+          <li>Roadmap with engineering and product tight collaboration</li>
+          <li>Enables PLG and Sales Driven orgs & processes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h1>Resources</h1>
+  <!-- Track Record Section -->
+  <section class="track-section">
+    <h2 class="section-heading">Track Record</h2>
+    <div class="stats-grid">
+      <div class="stat-item" data-tilt>
+        <span class="stat-number">17+</span>
+        <span class="stat-label">Years in Software</span>
+      </div>
+      <div class="stat-item" data-tilt>
+        <span class="stat-number">3</span>
+        <span class="stat-label">VC-backed Startups Co-founded</span>
+      </div>
+      <div class="stat-item" data-tilt>
+        <span class="stat-number">10M+</span>
+        <span class="stat-label">Users Served</span>
+      </div>
+      <div class="stat-item" data-tilt>
+        <span class="stat-number">250+</span>
+        <span class="stat-label">Students Mentored</span>
+      </div>
+      <div class="stat-item" data-tilt>
+        <span class="stat-number">10k+</span>
+        <span class="stat-label">Enterprises Serviced</span>
+      </div>
+    </div>
+  </section>
 
-  <ul class="posts">
-    {% for cheatsheet in site.cheatsheets %}
-      <li>
-        <a class="post-link" href="{{ cheatsheet.url | prepend: site.baseurl }}">{{ cheatsheet.title }}</a>
-      </li>
-    {% endfor %}
-    <li>
-      <a class="post-link" href="http://slides.com/alexyeah/introduction-to-array-in-javascript#/" target="_blank">Fruited Array in JS</a>
-    </li>
-    <li>
-      <a class="post-link" href="http://slides.com/alexyeah/intro-to-javascript#/" target="_blank">Intro to Javascript</a>
-    </li>
-    <li>
-      <a class="post-link" href="http://slides.com/alexyeah/front-end-web-development-101#/" target="_blank">Front-end Web Dev 101</a>
-    </li>
-  </ul>
+  <!-- Featured Projects -->
+  <section class="featured-section">
+    <h2 class="section-heading">Featured Work</h2>
+    <p class="section-subheading">Ventures I've built from the ground up</p>
+
+    <div class="featured-grid">
+
+      <div class="featured-card" data-tilt>
+        <div class="featured-card-glow"></div>
+        <div class="featured-card-body">
+          <span class="featured-card-status status-active">Active</span>
+          <h3>Atlassian AI-First System of Work</h3>
+          <p class="featured-card-tagline">Leading engineering teams building Jira's next-generation AI-powered experiences — redefining how teams plan, track, and ship work.</p>
+          <span class="featured-card-role">Senior Engineering Manager</span>
+        </div>
+      </div>
+
+      <a href="{{ site.baseurl }}/projects/upflowy/" class="featured-card" data-tilt>
+        <div class="featured-card-glow"></div>
+        <div class="featured-card-body">
+          <span class="featured-card-status status-completed">Completed</span>
+          <h3>Upflowy</h3>
+          <p class="featured-card-tagline">No-code platform changing the way companies design and test their lead signup flows.</p>
+          <span class="featured-card-role">Co-Founder</span>
+        </div>
+      </a>
+
+      <a href="{{ site.baseurl }}/projects/liftango/" class="featured-card" data-tilt>
+        <div class="featured-card-glow"></div>
+        <div class="featured-card-body">
+          <span class="featured-card-status status-completed">Completed</span>
+          <h3>Liftango</h3>
+          <p class="featured-card-tagline">Turn-key shared mobility solutions. Scaled team 3 → 30. Served 100k+ rides. Award-winning.</p>
+          <span class="featured-card-role">Co-founder &amp; CPO/CTO</span>
+        </div>
+      </a>
+
+    </div>
+    <div class="section-cta">
+      <a href="{{ site.baseurl }}/projects/" class="btn btn-outline">All Projects →</a>
+    </div>
+  </section>
+
+  <!-- Blog & Resources -->
+  <div class="content-grid">
+    <section class="blog-section">
+      <h2 class="section-heading">Writing</h2>
+      {% if site.posts.size > 0 %}
+        <div class="posts-list">
+          {% for post in site.posts limit:5 %}
+            <article class="post-item">
+              <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%b %d, %Y" }}
+              </time>
+              <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">{{ post.title }}</a>
+            </article>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p class="no-content">No blog posts yet.</p>
+      {% endif %}
+    </section>
+
+    <section class="resources-section">
+      <h2 class="section-heading">Resources</h2>
+      <div class="resources-list">
+        {% for cheatsheet in site.cheatsheets %}
+          <div class="resource-item">
+            <a href="{{ cheatsheet.url | prepend: site.baseurl }}" class="resource-link">{{ cheatsheet.title }}</a>
+          </div>
+        {% endfor %}
+        <div class="resource-item">
+          <a href="http://slides.com/alexyeah/introduction-to-array-in-javascript#/" target="_blank" rel="noopener noreferrer" class="resource-link">Fruited Array in JS ↗</a>
+        </div>
+        <div class="resource-item">
+          <a href="http://slides.com/alexyeah/intro-to-javascript#/" target="_blank" rel="noopener noreferrer" class="resource-link">Intro to Javascript ↗</a>
+        </div>
+        <div class="resource-item">
+          <a href="http://slides.com/alexyeah/front-end-web-development-101#/" target="_blank" rel="noopener noreferrer" class="resource-link">Front-end Web Dev 101 ↗</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
 </div>

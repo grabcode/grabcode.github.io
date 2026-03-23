@@ -1,7 +1,94 @@
+/* Modern SCSS Mixins */
+
+/* Smooth transition mixin */
+@mixin smooth-transition($properties: all, $duration: 0.3s, $easing: ease) {
+  transition: $properties $duration $easing;
+}
+
+/* Flexbox centered layout */
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glow effect for neon accent */
+@mixin glow-effect($color: #58a6ff, $intensity: 0.2) {
+  box-shadow: 0 0 20px rgba($color, $intensity);
+}
+
+/* Card/container styles */
+@mixin card-base($bg: #161b22, $border: #30363d) {
+  background-color: $bg;
+  border: 1px solid $border;
+  border-radius: 8px;
+  @include smooth-transition;
+}
+
+/* Hover card lift effect */
+@mixin card-hover {
+  &:hover {
+    border-color: #58a6ff;
+    @include glow-effect(#58a6ff);
+    transform: translateY(-4px);
+  }
+}
+
+/* Gradient text effect */
+@mixin gradient-text($from: #58a6ff, $to: #79c0ff) {
+  background: linear-gradient(135deg, $from 0%, $to 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive container */
+@mixin container($max-width: 1100px, $padding: 30px) {
+  max-width: $max-width;
+  padding: 0 $padding;
+  margin: 0 auto;
+}
+
+/* Clearfix for older layouts (kept for compatibility) */
 @mixin clearfix {
   &:after {
     content: "";
     display: table;
     clear: both;
+  }
+}
+
+/* Modern scrollbar styling */
+@mixin scrollbar-dark {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #0d1117;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 4px;
+
+    &:hover {
+      background: #58a6ff;
+    }
+  }
+}
+
+/* Responsive text sizing */
+@mixin responsive-text($mobile: 1rem, $tablet: 1.2rem, $desktop: 1.5rem) {
+  font-size: $mobile;
+
+  @media screen and (min-width: 768px) {
+    font-size: $tablet;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: $desktop;
   }
 }

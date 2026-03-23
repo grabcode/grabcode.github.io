@@ -2,14 +2,109 @@
 layout: default
 ---
 
-<div class="project">
-
+<article class="project">
+  {% if page.bgimg %}
+  <div class="project-hero">
+    <img src="/img/{{ page.bgimg }}" alt="{{ page.title }}" class="project-hero-image">
+    <div class="project-hero-overlay">
+      <div class="project-hero-content">
+        <a href="{{ site.baseurl }}/projects/" class="project-back-link">&larr; Back to Projects</a>
+        <h1 class="project-title">{{ page.title }}</h1>
+        {% if page.tagline %}
+        <p class="project-tagline">{{ page.tagline }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% else %}
   <header class="project-header">
-    <h1>{{ page.title }}</h1>
+    <a href="{{ site.baseurl }}/projects/" class="project-back-link">&larr; Back to Projects</a>
+    <h1 class="project-title">{{ page.title }}</h1>
+    {% if page.tagline %}
+    <p class="project-tagline">{{ page.tagline }}</p>
+    {% endif %}
   </header>
+  {% endif %}
 
-  <article class="project-content">
-  {{ content }}
-  </article>
+  {% if page.role or page.period or page.status or page.tech %}
+  <div class="project-metadata">
+    {% if page.role %}
+    <div class="metadata-item">
+      <span class="metadata-label">Role</span>
+      <span class="metadata-value">{{ page.role }}</span>
+    </div>
+    {% endif %}
+    {% if page.period %}
+    <div class="metadata-item">
+      <span class="metadata-label">Period</span>
+      <span class="metadata-value">{{ page.period }}</span>
+    </div>
+    {% endif %}
+    {% if page.status %}
+    <div class="metadata-item">
+      <span class="metadata-label">Status</span>
+      <span class="metadata-badge status-{{ page.status | downcase }}">{{ page.status }}</span>
+    </div>
+    {% endif %}
+    {% if page.tech %}
+    <div class="metadata-item">
+      <span class="metadata-label">Tech Stack</span>
+      <div class="tech-tags">
+        {% for tech in page.tech %}
+          <span class="tech-tag">{{ tech }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
 
-</div>
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  {% if page.externalurl %}
+  <div class="project-actions">
+    <a href="{{ page.externalurl }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+      View Project <span class="external-icon">↗</span>
+    </a>
+  </div>
+  {% endif %}
+
+  <nav class="project-nav">
+    {% assign projects = site.projects %}
+    {% assign project_count = projects | size %}
+    {% for p in projects %}
+      {% if p.url == page.url %}
+        {% assign current_index = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign prev_index = current_index | minus: 1 %}
+    {% assign next_index = current_index | plus: 1 %}
+
+    <div class="project-nav-links">
+      {% if prev_index >= 0 %}
+        {% assign prev_project = projects[prev_index] %}
+        <a href="{{ prev_project.url | prepend: site.baseurl }}" class="project-nav-btn project-nav-prev">
+          <span class="project-nav-direction">← Previous</span>
+          <span class="project-nav-title">{{ prev_project.title }}</span>
+        </a>
+      {% else %}
+        <div class="project-nav-btn project-nav-spacer"></div>
+      {% endif %}
+
+      <a href="{{ site.baseurl }}/projects/" class="project-nav-center">All Projects</a>
+
+      {% if next_index < project_count %}
+        {% assign next_project = projects[next_index] %}
+        <a href="{{ next_project.url | prepend: site.baseurl }}" class="project-nav-btn project-nav-next">
+          <span class="project-nav-direction">Next →</span>
+          <span class="project-nav-title">{{ next_project.title }}</span>
+        </a>
+      {% else %}
+        <div class="project-nav-btn project-nav-spacer"></div>
+      {% endif %}
+    </div>
+  </nav>
+</article>

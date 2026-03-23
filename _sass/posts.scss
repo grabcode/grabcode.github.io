@@ -1,19 +1,407 @@
-.page-content {
+/* Post and page content styles */
 
-  h4{
-    color: rgba(0,0,0,0.44);
+.page-content {
+  h4 {
+    color: #79c0ff;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 12px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 16px;
+      background: linear-gradient(180deg, #58a6ff, #79c0ff);
+      border-radius: 2px;
+    }
   }
 
+  /* Drop cap effect on first letter */
   &>p:first-child:first-letter {
     float: left;
-    font-size: 76px;
-    line-height: 72px;
-    margin: 0 6px 0 0;
+    font-size: 3.2rem;
+    line-height: 2.4rem;
+    margin: 0 8px 0 0;
+    font-weight: 700;
+    color: #58a6ff;
+    text-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+  }
+}
+
+.post-content {
+  line-height: 1.8;
+  font-size: 1.05rem;
+
+  /* Paragraph styling */
+  p {
+    margin-bottom: 1.5rem;
+    color: #e6edf3;
   }
 
+  /* Improved heading hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #30363d;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #79c0ff;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #30363d;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: #58a6ff;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    color: #8b949e;
+  }
+
+  /* List styling */
+  ul, ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+  }
+
+  li {
+    margin-bottom: 0.8rem;
+    color: #e6edf3;
+
+    &:before {
+      content: '→';
+      color: #58a6ff;
+      margin-right: 0.5rem;
+      font-weight: bold;
+    }
+  }
+
+  ol li {
+    &:before {
+      content: '';
+      margin-right: 0;
+    }
+  }
+
+  /* Code blocks */
+  pre {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+    @include scrollbar-dark;
+
+    code {
+      color: #e6edf3;
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Courier New', monospace;
+      font-size: 0.95rem;
+    }
+  }
+
+  /* Inline code */
+  code {
+    background-color: #161b22;
+    color: #7ee787;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Courier New', monospace;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid #30363d;
+  }
+
+  /* Links in content */
+  a {
+    color: #58a6ff;
+    @include smooth-transition;
+    position: relative;
+
+    &:hover {
+      color: #79c0ff;
+      text-shadow: 0 0 12px rgba(88, 166, 255, 0.4);
+    }
+  }
+
+  /* Blockquotes */
+  blockquote {
+    border-left: 4px solid #58a6ff;
+    background-color: #161b22;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin: 2rem 0;
+    color: #8b949e;
+    font-style: italic;
+    @include smooth-transition;
+    position: relative;
+    padding-left: 1.5rem;
+
+    &:hover {
+      border-left-color: #79c0ff;
+      box-shadow: 0 0 20px rgba(88, 166, 255, 0.15);
+      background-color: #21262d;
+    }
+
+    p {
+      margin: 0;
+      color: #8b949e;
+    }
+
+    cite {
+      display: block;
+      margin-top: 1rem;
+      color: #6e7681;
+      font-style: normal;
+
+      &:before {
+        content: '— ';
+      }
+    }
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+
+    thead {
+      border-bottom: 2px solid #30363d;
+      background-color: #161b22;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      color: #e6edf3;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #30363d;
+
+      &:hover {
+        background-color: #161b22;
+      }
+    }
+
+    th {
+      font-weight: 600;
+      color: #58a6ff;
+    }
+  }
+
+  /* Emphasis */
+  strong {
+    color: #58a6ff;
+    font-weight: 600;
+  }
+
+  em {
+    color: #79c0ff;
+  }
+
+  /* Horizontal rule */
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #30363d, transparent);
+    margin: 2rem 0;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border: 1px solid #30363d;
+    @include smooth-transition;
+
+    &:hover {
+      border-color: #58a6ff;
+      box-shadow: 0 0 25px rgba(88, 166, 255, 0.2);
+    }
+  }
+
+  /* Definition lists */
+  dl {
+    margin: 1.5rem 0;
+  }
+
+  dt {
+    font-weight: 600;
+    color: #58a6ff;
+    margin-top: 1rem;
+  }
+
+  dd {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #8b949e;
+  }
 }
-.post-content {
-  text-align: justify;
+
+/* Resume styles */
+.resume {
+  .resume-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #30363d;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .resume-section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #58a6ff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background: linear-gradient(90deg, #58a6ff, #79c0ff);
+      border-radius: 2px;
+    }
+  }
+
+  .job-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #79c0ff;
+    margin-bottom: 0.5rem;
+  }
+
+  .job-company {
+    font-size: 1.1rem;
+    color: #8b949e;
+    margin-bottom: 0.3rem;
+
+    &:before {
+      content: 'at ';
+      color: #6e7681;
+    }
+  }
+
+  .job-duration {
+    font-size: 0.9rem;
+    color: #6e7681;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .job-description {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #161b22;
+    border-left: 3px solid #58a6ff;
+    border-radius: 4px;
+
+    ul {
+      margin: 0;
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.5rem;
+        color: #e6edf3;
+
+        &:before {
+          content: '▪';
+          color: #58a6ff;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .skill-category {
+    margin-bottom: 2rem;
+  }
+
+  .skill-category-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #58a6ff;
+    margin-bottom: 0.75rem;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .skill-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    color: #8b949e;
+    @include smooth-transition;
+
+    &:hover {
+      border-color: #58a6ff;
+      color: #58a6ff;
+      box-shadow: 0 0 12px rgba(88, 166, 255, 0.2);
+    }
+  }
+
+  .education {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #161b22;
+    border-radius: 6px;
+    border-left: 3px solid #79c0ff;
+  }
+
+  .degree {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #79c0ff;
+    margin-bottom: 0.3rem;
+  }
+
+  .school {
+    color: #8b949e;
+    margin-bottom: 0.3rem;
+  }
+
+  .graduation-year {
+    font-size: 0.9rem;
+    color: #6e7681;
+  }
 }

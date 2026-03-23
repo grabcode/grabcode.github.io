@@ -5,22 +5,182 @@ permalink: /projects/
 header: true
 ---
 
-<div class="home">
+<div class="projects-container">
 
-  <ul class="projects">
-    {% for project in site.projects %}
-      <!-- <li style="background: url('/img/{{project.bgimg}}');"> -->
-      <li class="project">
-        <!-- <a target="_blank" href="{{project.externalurl}}"></a> -->
-        <div class="project__thumb">
-          <img src="/img/{{project.bgimg}}" alt="project.title">
-        </div>
-        <div class="project__body">
-          <div class="project__category">{{project.category}}</div>
-          
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="projects-hero">
+    <p class="projects-hero-sub">Hover to reveal — click to explore</p>
+  </div>
+
+  <!-- Startup Funnel -->
+  <div class="funnel">
+    <div class="funnel-bar funnel-bar-0"></div>
+    <span class="funnel-number funnel-num-0">10x</span>
+    <span class="funnel-label">Tech-leading projects delivered</span>
+
+    <div class="funnel-bar funnel-bar-1"></div>
+    <span class="funnel-number funnel-num-1">6</span>
+    <span class="funnel-label">Startups Started</span>
+
+    <div class="funnel-bar funnel-bar-2"></div>
+    <span class="funnel-number funnel-num-2">4</span>
+    <span class="funnel-label">Got to Market</span>
+
+    <div class="funnel-bar funnel-bar-3"></div>
+    <span class="funnel-number funnel-num-3">3</span>
+    <span class="funnel-label">Funded (Multi-Million $)</span>
+
+    <div class="funnel-bar funnel-bar-4"></div>
+    <span class="funnel-number funnel-num-4">2</span>
+    <span class="funnel-label">Product-Market Fit</span>
+  </div>
+
+  <!-- Mosaic Grid -->
+  <div class="mosaic mosaic-random">
+
+    {% assign all_projects = site.projects %}
+
+    {% comment %} Row 1: Upflowy (medium-wide) + Backseat (narrow-tall) + Liftango (medium) {% endcomment %}
+    {% for project in all_projects %}{% if project.title == "Upflowy" %}
+    <a href="{{ project.url | prepend: site.baseurl }}" class="mosaic-tile m-r1-a">
+      <div class="mosaic-media">{% if project.bgimg %}<img src="/img/{{ project.bgimg }}" alt="{{ project.title }}" loading="lazy">{% else %}<div class="mosaic-placeholder"></div>{% endif %}</div>
+      <div class="mosaic-fog"></div>
+      <div class="mosaic-content">
+        {% if project.status %}<span class="mosaic-status {% if project.status == 'active' %}status-active{% else %}status-completed{% endif %}">{{ project.status }}</span>{% endif %}
+        <h2 class="mosaic-title">{{ project.title }}</h2>
+        {% if project.tagline %}<p class="mosaic-tagline">{{ project.tagline }}</p>{% endif %}
+        {% if project.role %}<span class="mosaic-role">{{ project.role }}</span>{% endif %}
+        {% if project.tech %}<div class="mosaic-tech">{% for tech in project.tech limit:4 %}<span class="tech-tag">{{ tech }}</span>{% endfor %}</div>{% endif %}
+        <span class="mosaic-cta">Explore →</span>
+      </div>
+    </a>
+    {% endif %}{% endfor %}
+
+    {% for project in all_projects %}{% if project.title == "Backseat" %}
+    <a href="{{ project.url | prepend: site.baseurl }}" class="mosaic-tile m-r1-b">
+      <div class="mosaic-media">{% if project.bgimg %}<img src="/img/{{ project.bgimg }}" alt="{{ project.title }}" loading="lazy">{% else %}<div class="mosaic-placeholder"></div>{% endif %}</div>
+      <div class="mosaic-fog"></div>
+      <div class="mosaic-content">
+        {% if project.status %}<span class="mosaic-status {% if project.status == 'active' %}status-active{% else %}status-completed{% endif %}">{{ project.status }}</span>{% endif %}
+        <h2 class="mosaic-title">{{ project.title }}</h2>
+        {% if project.tagline %}<p class="mosaic-tagline">{{ project.tagline }}</p>{% endif %}
+        {% if project.role %}<span class="mosaic-role">{{ project.role }}</span>{% endif %}
+        <span class="mosaic-cta">Explore →</span>
+      </div>
+    </a>
+    {% endif %}{% endfor %}
+
+    {% for project in all_projects %}{% if project.title == "Liftango" %}
+    <a href="{{ project.url | prepend: site.baseurl }}" class="mosaic-tile m-r1-c">
+      <div class="mosaic-media">{% if project.bgimg %}<img src="/img/{{ project.bgimg }}" alt="{{ project.title }}" loading="lazy">{% else %}<div class="mosaic-placeholder"></div>{% endif %}</div>
+      <div class="mosaic-fog"></div>
+      <div class="mosaic-content">
+        {% if project.status %}<span class="mosaic-status {% if project.status == 'active' %}status-active{% else %}status-completed{% endif %}">{{ project.status }}</span>{% endif %}
+        <h2 class="mosaic-title">{{ project.title }}</h2>
+        {% if project.tagline %}<p class="mosaic-tagline">{{ project.tagline }}</p>{% endif %}
+        {% if project.role %}<span class="mosaic-role">{{ project.role }}</span>{% endif %}
+        {% if project.tech %}<div class="mosaic-tech">{% for tech in project.tech limit:3 %}<span class="tech-tag">{{ tech }}</span>{% endfor %}</div>{% endif %}
+        <span class="mosaic-cta">Explore →</span>
+      </div>
+    </a>
+    {% endif %}{% endfor %}
+
+    {% comment %} Row 2: Style Atlas (medium) + Radar (wide) {% endcomment %}
+    {% for project in all_projects %}{% if project.title == "Style Atlas" %}
+    <a href="{{ project.url | prepend: site.baseurl }}" class="mosaic-tile m-r2-a">
+      <div class="mosaic-media">{% if project.bgimg %}<img src="/img/{{ project.bgimg }}" alt="{{ project.title }}" loading="lazy">{% else %}<div class="mosaic-placeholder"></div>{% endif %}</div>
+      <div class="mosaic-fog"></div>
+      <div class="mosaic-content">
+        {% if project.status %}<span class="mosaic-status {% if project.status == 'active' %}status-active{% else %}status-completed{% endif %}">{{ project.status }}</span>{% endif %}
+        <h2 class="mosaic-title">{{ project.title }}</h2>
+        {% if project.tagline %}<p class="mosaic-tagline">{{ project.tagline }}</p>{% endif %}
+        {% if project.role %}<span class="mosaic-role">{{ project.role }}</span>{% endif %}
+        {% if project.tech %}<div class="mosaic-tech">{% for tech in project.tech limit:4 %}<span class="tech-tag">{{ tech }}</span>{% endfor %}</div>{% endif %}
+        <span class="mosaic-cta">Explore →</span>
+      </div>
+    </a>
+    {% endif %}{% endfor %}
+
+    {% for project in all_projects %}{% if project.title == "Radar — Redbelts" %}
+    <a href="{{ project.url | prepend: site.baseurl }}" class="mosaic-tile m-r2-b">
+      <div class="mosaic-media">{% if project.bgimg %}<img src="/img/{{ project.bgimg }}" alt="{{ project.title }}" loading="lazy">{% else %}<div class="mosaic-placeholder"></div>{% endif %}</div>
+      <div class="mosaic-fog"></div>
+      <div class="mosaic-content">
+        {% if project.status %}<span class="mosaic-status {% if project.status == 'active' %}status-active{% else %}status-completed{% endif %}">{{ project.status }}</span>{% endif %}
+        <h2 class="mosaic-title">{{ project.title }}</h2>
+        {% if project.tagline %}<p class="mosaic-tagline">{{ project.tagline }}</p>{% endif %}
+        {% if project.role %}<span class="mosaic-role">{{ project.role }}</span>{% endif %}
+        <span class="mosaic-cta">Explore →</span>
+      </div>
+    </a>
+    {% endif %}{% endfor %}
+
+    {% comment %} Row 3: Telstra (narrow) + Ticketek (wide) + TakeFlight (medium) {% endcomment %}
+    {% for project in all_projects %}{% if project.title == "Telstra +61 Campaign" %}
+    <a href="{{ project.url | prepend: site.baseurl }}" class="mosaic-tile m-r3-a">
+      <div class="mosaic-media">{% if project.bgimg %}<img src="/img/{{ project.bgimg }}" alt="{{ project.title }}" loading="lazy">{% else %}<div class="mosaic-placeholder"></div>{% endif %}</div>
+      <div class="mosaic-fog"></div>
+      <div class="mosaic-content">
+        {% if project.status %}<span class="mosaic-status {% if project.status == 'active' %}status-active{% else %}status-completed{% endif %}">{{ project.status }}</span>{% endif %}
+        <h2 class="mosaic-title">{{ project.title }}</h2>
+        {% if project.role %}<span class="mosaic-role">{{ project.role }}</span>{% endif %}
+        <span class="mosaic-cta">Explore →</span>
+      </div>
+    </a>
+    {% endif %}{% endfor %}
+
+    {% for project in all_projects %}{% if project.title == "Ticketek — WWI Commemoration" %}
+    <a href="{{ project.url | prepend: site.baseurl }}" class="mosaic-tile m-r3-b">
+      <div class="mosaic-media">{% if project.bgimg %}<img src="/img/{{ project.bgimg }}" alt="{{ project.title }}" loading="lazy">{% else %}<div class="mosaic-placeholder"></div>{% endif %}</div>
+      <div class="mosaic-fog"></div>
+      <div class="mosaic-content">
+        {% if project.status %}<span class="mosaic-status {% if project.status == 'active' %}status-active{% else %}status-completed{% endif %}">{{ project.status }}</span>{% endif %}
+        <h2 class="mosaic-title">{{ project.title }}</h2>
+        {% if project.role %}<span class="mosaic-role">{{ project.role }}</span>{% endif %}
+        <span class="mosaic-cta">Explore →</span>
+      </div>
+    </a>
+    {% endif %}{% endfor %}
+
+    {% for project in all_projects %}{% if project.title == "Amplify TakeFlight — CSC" %}
+    <a href="{{ project.url | prepend: site.baseurl }}" class="mosaic-tile m-r3-c">
+      <div class="mosaic-media">{% if project.bgimg %}<img src="/img/{{ project.bgimg }}" alt="{{ project.title }}" loading="lazy">{% else %}<div class="mosaic-placeholder"></div>{% endif %}</div>
+      <div class="mosaic-fog"></div>
+      <div class="mosaic-content">
+        {% if project.status %}<span class="mosaic-status {% if project.status == 'active' %}status-active{% else %}status-completed{% endif %}">{{ project.status }}</span>{% endif %}
+        <h2 class="mosaic-title">{{ project.title }}</h2>
+        {% if project.role %}<span class="mosaic-role">{{ project.role }}</span>{% endif %}
+        <span class="mosaic-cta">Explore →</span>
+      </div>
+    </a>
+    {% endif %}{% endfor %}
+
+    {% comment %} Row 4: SportInTown + Teazin {% endcomment %}
+    {% for project in all_projects %}{% if project.title == "SportInTown" %}
+    <a href="{{ project.url | prepend: site.baseurl }}" class="mosaic-tile m-r4-a">
+      <div class="mosaic-media">{% if project.bgimg %}<img src="/img/{{ project.bgimg }}" alt="{{ project.title }}" loading="lazy">{% else %}<div class="mosaic-placeholder"></div>{% endif %}</div>
+      <div class="mosaic-fog"></div>
+      <div class="mosaic-content">
+        {% if project.status %}<span class="mosaic-status {% if project.status == 'active' %}status-active{% else %}status-completed{% endif %}">{{ project.status }}</span>{% endif %}
+        <h2 class="mosaic-title">{{ project.title }}</h2>
+        {% if project.tagline %}<p class="mosaic-tagline">{{ project.tagline }}</p>{% endif %}
+        <span class="mosaic-cta">Explore →</span>
+      </div>
+    </a>
+    {% endif %}{% endfor %}
+
+    {% for project in all_projects %}{% if project.title == "Teazin" %}
+    <a href="{{ project.url | prepend: site.baseurl }}" class="mosaic-tile m-r4-b">
+      <div class="mosaic-media">{% if project.bgimg %}<img src="/img/{{ project.bgimg }}" alt="{{ project.title }}" loading="lazy">{% else %}<div class="mosaic-placeholder"></div>{% endif %}</div>
+      <div class="mosaic-fog"></div>
+      <div class="mosaic-content">
+        {% if project.status %}<span class="mosaic-status {% if project.status == 'active' %}status-active{% else %}status-completed{% endif %}">{{ project.status }}</span>{% endif %}
+        <h2 class="mosaic-title">{{ project.title }}</h2>
+        {% if project.tagline %}<p class="mosaic-tagline">{{ project.tagline }}</p>{% endif %}
+        <span class="mosaic-cta">Explore →</span>
+      </div>
+    </a>
+    {% endif %}{% endfor %}
+
+  </div>
 
 </div>

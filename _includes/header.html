@@ -1,14 +1,41 @@
 <header class="site-header">
-
   <div class="wrap">
+    <div class="site-title-group">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
 
-    <ul>
-      {% if site.github_username %}<li>
-        <a href="https://github.com/{{ site.github_username }}" target="_blank">
+    <nav class="site-nav">
+      <button class="menu-icon" aria-label="Toggle navigation">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
+          <path fill="currentColor" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
+            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="currentColor" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
+            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="currentColor" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
+            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </button>
+
+      <div class="trigger">
+        {% for page in site.pages %}
+          {% if page.header %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+    <ul class="social-links">
+      {% if site.github_username %}
+      <li>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <span class="icon github">
             <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-              <path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761
+              viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+              <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761
               c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32
               c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472
               c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037
@@ -20,12 +47,14 @@
             </svg>
           </span>
         </a>
-      </li>{% endif %}
-      {% if site.twitter_username %}<li>
-        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+      </li>
+      {% endif %}
+      {% if site.twitter_username %}
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
           <span class="icon twitter">
             <svg version="1.1" class="twitter-icon-svg" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" xml:space="preserve">
-            <path fill="#231F20" d="M50,0C22.386,0,0,22.386,0,50s22.386,50,50,50s50-22.386,50-50S77.614,0,50,0z M76.666,38.556
+            <path fill="currentColor" d="M50,0C22.386,0,0,22.386,0,50s22.386,50,50,50s50-22.386,50-50S77.614,0,50,0z M76.666,38.556
               c0.023,0.547,0.037,1.096,0.037,1.646c0,16.818-12.801,36.211-36.211,36.211c-7.188,0-13.877-2.106-19.51-5.717
               c0.996,0.116,2.01,0.177,3.037,0.177c5.963,0,11.449-2.034,15.807-5.448c-5.57-0.102-10.271-3.782-11.891-8.838
               c0.777,0.148,1.574,0.229,2.395,0.229c1.162,0,2.285-0.156,3.354-0.447C27.862,55.2,23.475,50.056,23.475,43.89
@@ -36,12 +65,13 @@
             </svg>
           </span>
         </a>
-      </li>{% endif %}
+      </li>
+      {% endif %}
       <li>
-        <a href="http://lnkd.in/dGkses" target="_blank">
-          <span class="icon linked">
+        <a href="https://www.linkedin.com/in/girardalexandre/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <span class="icon linkedin">
             <svg version="1.1" class="linkedin-icon-svg" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" xml:space="preserve">
-            <path fill="#231F20" d="M50,0C22.386,0,0,22.386,0,50s22.386,50,50,50s50-22.386,50-50S77.614,0,50,0z M36.697,69.639H25.465V35.846
+            <path fill="currentColor" d="M50,0C22.386,0,0,22.386,0,50s22.386,50,50,50s50-22.386,50-50S77.614,0,50,0z M36.697,69.639H25.465V35.846
               h11.232V69.639z M31.082,31.234h-0.074c-3.77,0-6.207-2.596-6.207-5.842c0-3.314,2.514-5.838,6.355-5.838s6.207,2.523,6.279,5.838
               C37.436,28.639,34.998,31.234,31.082,31.234z M77.201,69.639H65.969V51.561c0-4.541-1.625-7.641-5.689-7.641
               c-3.104,0-4.953,2.09-5.764,4.107c-0.297,0.721-0.371,1.73-0.371,2.74v18.871H42.912c0,0,0.148-30.621,0-33.793h11.232v4.789
@@ -51,27 +81,5 @@
         </a>
       </li>
     </ul>
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
-          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
-            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
-            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
-            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.header %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-
   </div>
-
 </header>
